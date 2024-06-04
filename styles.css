@@ -1,0 +1,175 @@
+body {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh;
+    margin: 0;
+    background-image: url('Background.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.button{
+    position: absolute;
+	margin-top: 1500px;
+    bottom: 0;
+    left: 50%;
+    margin-bottom: 50px;
+    margin-right: 50px;
+    border-radius: 5px;
+    width: 100px;
+    height: 100px;
+    border: 1px solid;
+    background-color: rgb(255, 205, 139);
+    font-family: "Fraunces", serif;
+    font-size: 2em;
+}
+.Top{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    border: 0px solid;
+    background-image: linear-gradient(to right top, rgb(163, 131, 88), rgb(239, 203, 153));
+}
+.Side{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 80px;
+    height: 100%;
+    border: 0px solid;
+    background-image: linear-gradient(to left bottom, rgb(122, 85, 54) , rgb(71, 42, 17));
+}
+.Name{
+    position: absolute;
+	top: 10px;
+    left: 120px;
+	font-family: "Sevillana", cursive;
+	font-size: 80px;
+	font-weight: italic;
+}
+.Logo{
+	position: absolute;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.MenuButton{
+	background-color: transparent;
+	border-width: 0;
+	position: absolute;
+	top: 120px;
+	left: -5px;
+}
+.Catalog {
+  background-color: rgba(252, 239, 215,.7);
+  position: absolute;
+  text-align: center;
+  font-family: "Fraunces", serif;
+  bottom: 0;
+  left: calc(80px - 10%); 
+  width: 10%; /* Adjust the width to accommodate the checkboxes and search button */
+  height: calc(100% - 120px);
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.5s;
+}
+.genre-checkbox {
+  margin: 5px;
+}
+
+.Catalog button {
+  display: block;
+  margin: 10px auto;
+}
+.Catalog::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 3px;
+    height: 100%;
+    background-color: rgb(46, 27, 11); 
+    z-index: 1; 
+}
+.Icon {
+	position: absolute;
+    top: 20px;
+    right: 10%;
+}
+.Genre {
+	background-color:transparent;
+	display:block;
+	border:0px;
+	cursor:pointer;
+	color:#000000;
+	font-family: "Fraunces", serif;
+	font-size:16px;
+	padding:10px;
+	text-decoration:none;
+	text-align: center;
+	width: 100%;
+}
+.Genre h3 {
+    margin: 0;
+}
+
+/* Styling for the book lists */
+.genreBooks {
+    display: none;
+    margin-top: 120px;
+    padding: 20px;
+    text-align: center;
+    font-family: "Fraunces", serif;
+    font-size: 1.2em;
+    color: #333;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: calc(90% - 80px);
+    height: calc(100% - 160px);
+    overflow-y: auto;
+}
+
+.genreBooks h2 {
+    margin-top: 0;
+	margin: 0 auto;
+    border-radius: 10px;
+    font-size: 2em;
+    font-family: "Fraunces", serif;
+    background-color: #fff;
+	width: 20%
+}
+
+/* Book box styling */
+.book {
+    display: inline-block;
+    width: 200px;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-image: linear-gradient(to right top, rgb(239, 203, 153), rgb(245, 222, 191));
+}
+
+.book img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.book a {
+    display: block;
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #333;
+    text-decoration: none;
+    font-family: "Fraunces", serif;
+}
+.authorSearchInput {
+	width: 90%
+}
