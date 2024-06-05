@@ -25,8 +25,7 @@ Open Command Prompt and run the following command in your project directory:
 ```
 node server.js
 ```
-
-## Step 3:
+This command will start a local server at http://localhost:3000.
 
 ## 5 Test cases
 | **Test Case ID** | **File**   | **Method**            | **Test Description**                                             | **Expected Outcome**                                             | **Result** |
